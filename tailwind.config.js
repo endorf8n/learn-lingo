@@ -20,6 +20,7 @@ export default {
         lightYellow: "#FBE9BA",
         brightGreen: "#38CD3E",
         gray: "#8A8A89",
+        macBook: "#EEB055",
       },
       fontSize: {
         sm: "14px",
