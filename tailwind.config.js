@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        roboto: ["Roboto", "sans-serif"],
+        sans: ["Roboto", "sans-serif"],
       },
       screens: {
         mobile: { max: "767px" },
@@ -21,6 +21,9 @@ export default {
         brightGreen: "#38CD3E",
         gray: "#8A8A89",
         macBook: "#EEB055",
+      },
+      boxShadow: {
+        "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.8)",
       },
       fontSize: {
         sm: "14px",

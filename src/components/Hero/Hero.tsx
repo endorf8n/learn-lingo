@@ -2,13 +2,6 @@ import curlyGirl from "../../assets/images/Curly-girl.webp";
 import iconSprite from "../../assets/images/sprite.svg";
 import { heroInfo } from "../../assets/heroInfo";
 
-// const heroInfo = [
-//   { number: "32,000 +", title: "Experienced tutors" },
-//   { number: "300,000 +", title: "5-star tutor reviews" },
-//   { number: "120 +", title: "Subjects taught" },
-//   { number: "200 +", title: "Tutor nationalities" },
-// ];
-
 export const Hero = () => {
   return (
     <>
@@ -21,7 +14,7 @@ export const Hero = () => {
             </span>{" "}
             tutors
           </h1>
-          <p className="w-[471px] text-base mt-8 mb-16 leading-[22px] tracking-tight">
+          <p className="w-[460px] text-base mt-8 mb-16 leading-[22px] tracking-tight">
             Embark on an Exciting Language Journey with Expert Language Tutors:
             Elevate your language proficiency to new heights by connecting with
             highly qualified and experienced tutors.
