@@ -32,6 +32,7 @@ export default {
         ms: "20px",
         lg: "24px",
         xl: "28px",
+        xl2: "40px",
         xxl: "48px",
       },
     },

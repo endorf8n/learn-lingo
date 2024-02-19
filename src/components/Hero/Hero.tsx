@@ -43,7 +43,7 @@ export const Hero = () => {
       <div className="mt-6 mb-8 py-10 px-[122px] border border-darkYellow border-dashed rounded-3xl">
         <ul className="flex justify-center gap-x-24">
           {heroInfo.map(({ number, title }) => (
-            <li className="flex gap-4 justify-center items-center">
+            <li className="flex gap-4 justify-center items-center" key={title}>
               <p className="font-medium text-xl leading-8 tracking-tight">
                 {number}
               </p>
