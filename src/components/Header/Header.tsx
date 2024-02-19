@@ -1,7 +1,13 @@
 import { NavLink } from "react-router-dom";
 import iconSprite from "../../assets/images/sprite.svg";
+import { useState } from "react";
+import { Modal } from "../Modal/Modal";
+import { Register } from "../Auth/Register";
 
 export const Header = () => {
+  const [isLoginOpen, setIsLoginOpen] = useState<boolean>(false);
+  const [isRegisterOpen, setIsRegisterOpen] = useState<boolean>(false);
+
   return (
     <header className="flex items-center p-5 justify-around">
       <a
@@ -38,6 +44,7 @@ export const Header = () => {
         <button
           className="flex items-center gap-2 font-bold text-base leading-5 hover:text-darkYellow duration-300"
           type="button"
+          onClick={() => setIsLoginOpen(true)}
         >
           <svg className="fill-darkYellow" width={20} height={20}>
             <use xlinkHref={`${iconSprite}#login`}></use>
@@ -47,10 +54,19 @@ export const Header = () => {
         <button
           className="bg-black hover:bg-darkYellow text-white hover:text-black text-base font-bold rounded-xl py-[14px] px-[39px] hover:shadow-3xl duration-300"
           type="button"
+          onClick={() => setIsRegisterOpen(true)}
         >
           Registration
         </button>
       </div>
+      {isLoginOpen && (
+        <Modal closeModal={() => setIsLoginOpen(false)}>Login page</Modal>
+      )}
+      {isRegisterOpen && (
+        <Modal closeModal={() => setIsRegisterOpen(false)}>
+          <Register />
+        </Modal>
+      )}
     </header>
   );
 };
