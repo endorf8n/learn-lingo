@@ -3,7 +3,10 @@ import { emailValidator, passwordValidator } from "./regexPatterns";
 
 export const validationSchema = Yup.object({
   email: Yup.string()
-    .matches(emailValidator)
+    .matches(
+      emailValidator,
+      "Invalid email address, email must be in format 'youremail@example.com'"
+    )
     .email("Invalid email address")
     .required("Email is required"),
   password: Yup.string()
