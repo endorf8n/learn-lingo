@@ -3,6 +3,7 @@ import iconSprite from "../../assets/images/sprite.svg";
 import { useState } from "react";
 import { Modal } from "../Modal/Modal";
 import { Register } from "../Auth/Register";
+import { Login } from "../Auth/Login";
 
 export const Header = () => {
   const [isLoginOpen, setIsLoginOpen] = useState<boolean>(false);
@@ -60,7 +61,9 @@ export const Header = () => {
         </button>
       </div>
       {isLoginOpen && (
-        <Modal closeModal={() => setIsLoginOpen(false)}>Login page</Modal>
+        <Modal closeModal={() => setIsLoginOpen(false)}>
+          <Login />
+        </Modal>
       )}
       {isRegisterOpen && (
         <Modal closeModal={() => setIsRegisterOpen(false)}>

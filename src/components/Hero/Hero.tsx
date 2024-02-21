@@ -20,7 +20,7 @@ export const Hero = () => {
             highly qualified and experienced tutors.
           </p>
           <a
-            className="py-4 px-[88px] bg-darkYellow font-bold rounded-xl hover:scale-105 transition-transform duration-300 inline-flex"
+            className="py-4 px-[88px] bg-darkYellow font-bold rounded-xl hover:scale-105 hover:shadow-3xl transition-transform duration-300 inline-flex"
             href="/teachers"
           >
             Get started
