@@ -1,4 +1,8 @@
-export const Logout = () => {
+interface LogoutProps {
+  closeModal: () => void;
+}
+
+export const Logout = ({ closeModal }: LogoutProps) => {
   return (
     <div>
       <h3 className="text-3xl font-medium text-center mb-10">
@@ -14,6 +18,7 @@ export const Logout = () => {
         <button
           className="bg-black text-white hover:bg-darkYellow hover:text-black text-base font-bold rounded-xl py-[14px] px-12 hover:scale-110 hover:shadow-3xl duration-300"
           type="button"
+          onClick={closeModal}
         >
           Cancel
         </button>
