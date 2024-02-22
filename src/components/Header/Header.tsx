@@ -32,7 +32,7 @@ export const Header = () => {
       </a>
       <HeaderNavigation />
       <Auth openModal={openModal} />
-      <UserMenu openModal={openModal} />
+      <UserMenu openModal={openModal} closeModal={closeModal} />
       {isModalOpen && <Modal closeModal={closeModal}>{modalContent}</Modal>}
     </header>
   );
